@@ -99,7 +99,7 @@ db.connect(err => {
 
 // Servir quiz.html depuis la racine du projet
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'quiz.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // API pour soumettre le score
