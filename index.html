@@ -554,7 +554,7 @@
  
        const name = prompt("Enter your name to record your score:");
        if (name) {
-         fetch('http://localhost:3000/submit', {
+         fetch('https://bible-quiz-en-produc.onrender.com', {
            method: 'POST',
            headers: { 'Content-Type': 'application/json' },
            body: JSON.stringify({ name: name.trim(), score })
